@@ -58,6 +58,7 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="stb_image.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
