@@ -3,13 +3,13 @@
 
 1516715990 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/ImageRead.c
 
-1516776881 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/Interface.c
+1516778142 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/Interface.c
 	"Interface.h"
 
 1516716002 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/Lines.c
 
-1516776399 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/main.c
-	<gtk/gtk.h>
+1516776915 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/main.c
+	"Interface.h"
 
 1491432418 /usr/include/gtk-3.0/gtk/gtk.h
 	<gdk/gdk.h>
