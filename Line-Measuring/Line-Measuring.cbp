@@ -35,6 +35,26 @@
 		<Linker>
 			<Add option="`pkg-config gtk+-2.0 --libs`" />
 		</Linker>
+		<Unit filename="DisplaySelected.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DisplaySelected.h" />
+		<Unit filename="ImageRead.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ImageRead.h" />
+		<Unit filename="Interface.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Interface.h" />
+		<Unit filename="Lines.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Lines.h" />
+		<Unit filename="MarchingSquares.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MarchingSquares.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
