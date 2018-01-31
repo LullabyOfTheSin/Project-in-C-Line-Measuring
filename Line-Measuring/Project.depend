@@ -1,9 +1,10 @@
 # depslib dependency file v1.0
 1516715975 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/DisplaySelected.c
 
-1517357573 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/Lines.c
+1517415850 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/Lines.c
+	"Lines.h"
 
-1517377386 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/main.c
+1517415346 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/main.c
 	"Interface.h"
 	"MarchingSquares.h"
 
@@ -2744,10 +2745,10 @@
 
 1491432418 /usr/include/gtk-3.0/gtk/gtk-autocleanups.h
 
-1517363328 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/MarchingSquares.c
+1517408650 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/MarchingSquares.c
 	"MarchingSquares.h"
 
-1517354905 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/ImageRead.c
+1517406481 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/ImageRead.c
 	"ImageRead.h"
 
 1517356454 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/Interface.c
@@ -2786,7 +2787,7 @@
 1517325739 /home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/Interface.c
 	"Interface.h"
 
-1517354905 /home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/ImageRead.h
+1517405590 /home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/ImageRead.h
 	<stdio.h>
 	<stdlib.h>
 	"lodepng.h"
@@ -2795,9 +2796,9 @@
 1517345189 /home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/ImageRead.c
 	"ImageRead.h"
 
-1517361838 /home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/MarchingSquares.h
+1517414254 /home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/MarchingSquares.h
 	"Lines.h"
-	"ImageRead.h"
 
-1517359932 /home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/Lines.h
+1517414254 /home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/Lines.h
+	"ImageRead.h"
 

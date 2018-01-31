@@ -3,7 +3,7 @@
 ImageData *ImageThresholdApply(ImageData *originalImage, int isoValue, int tresholdingMode)
 {
     int pixelDataPointer=0;
-    ImageData *thresholdedImage=malloc(sizeof(ImageData));
+    ImageData *thresholdedImage=originalImage;
     thresholdedImage->width=originalImage->width;
     thresholdedImage->height=originalImage->height;
     thresholdedImage->originalBytesPerPixel=originalImage->originalBytesPerPixel;
@@ -103,6 +103,10 @@ ImageData *MarchingSquaresAlgoritm(ImageData *thresholdedImage)
     int pixelDataPointer=0;
 
     PixelData *pixelUL, *pixelUR, *pixelBR, *pixelBL;
+    pixelUL=malloc(sizeof(PixelData));
+    pixelUR=malloc(sizeof(PixelData));
+    pixelBR=malloc(sizeof(PixelData));
+    pixelBL=malloc(sizeof(PixelData));
     for(int row=1; row<thresholdedImage->height; row++)
     {
         for(int column=1; column<thresholdedImage->width; column++)
@@ -111,31 +115,32 @@ ImageData *MarchingSquaresAlgoritm(ImageData *thresholdedImage)
             pixelUR=PixelCoordinatesToPixelData(thresholdedImage,column,row-1);
             pixelBR=PixelCoordinatesToPixelData(thresholdedImage,column,row);
             pixelBL=PixelCoordinatesToPixelData(thresholdedImage,column-1,row);
-            if((pixelUL->redOrGray!=255 || pixelUR->redOrGray!=255 || pixelBR->redOrGray!=255 || pixelBL->redOrGray!=255)&&!(pixelUL->redOrGray!=255 && pixelUR->redOrGray!=255 && pixelBR->redOrGray!=255 && pixelBL->redOrGray!=255))
+            if(pixelUL->redOrGray==0 || pixelUR->redOrGray==0 || pixelBR->redOrGray==0 || pixelBL->redOrGray==0)
             {
+
                 if(pixelUL->redOrGray==255)
                 {
                     pixelDataPointer=(row-1)*thresholdedImage->width*thresholdedImage->finalBytesPerPixel;
                     pixelDataPointer+=(column-1)*thresholdedImage->finalBytesPerPixel;
-                    thresholdedImage->imagePixelRawData[pixelDataPointer]--;
+                    thresholdedImage->imagePixelRawData[pixelDataPointer]=50;
                 }
                 if(pixelUR->redOrGray==255)
                 {
                     pixelDataPointer=(row-1)*thresholdedImage->width*thresholdedImage->finalBytesPerPixel;
                     pixelDataPointer+=(column)*thresholdedImage->finalBytesPerPixel;
-                    thresholdedImage->imagePixelRawData[pixelDataPointer]--;
+                    thresholdedImage->imagePixelRawData[pixelDataPointer]=50;
                 }
                 if(pixelBR->redOrGray==255)
                 {
                     pixelDataPointer=(row)*thresholdedImage->width*thresholdedImage->finalBytesPerPixel;
                     pixelDataPointer+=(column)*thresholdedImage->finalBytesPerPixel;
-                    thresholdedImage->imagePixelRawData[pixelDataPointer]--;
+                    thresholdedImage->imagePixelRawData[pixelDataPointer]=50;
                 }
                 if(pixelBL->redOrGray==255)
                 {
                     pixelDataPointer=(row)*thresholdedImage->width*thresholdedImage->finalBytesPerPixel;
                     pixelDataPointer+=(column-1)*thresholdedImage->finalBytesPerPixel;
-                    thresholdedImage->imagePixelRawData[pixelDataPointer]--;
+                    thresholdedImage->imagePixelRawData[pixelDataPointer]=50;
                 }
             }
 
@@ -147,9 +152,9 @@ ImageData *MarchingSquaresAlgoritm(ImageData *thresholdedImage)
         for(int column=0; column<thresholdedImage->width; column++)
         {
 
-            pixelDataPointer=(row)*thresholdedImage->width*thresholdedImage->finalBytesPerPixel;
-            pixelDataPointer+=(column)*thresholdedImage->finalBytesPerPixel;
-            if(thresholdedImage->imagePixelRawData[pixelDataPointer]!=254)
+            pixelDataPointer=row*thresholdedImage->width*thresholdedImage->finalBytesPerPixel;
+            pixelDataPointer+=column*thresholdedImage->finalBytesPerPixel;
+            if(thresholdedImage->imagePixelRawData[pixelDataPointer]!=50)
             {
                 thresholdedImage->imagePixelRawData[pixelDataPointer]=0;
                 if(thresholdedImage->finalBytesPerPixel>=3)
@@ -161,6 +166,7 @@ ImageData *MarchingSquaresAlgoritm(ImageData *thresholdedImage)
 
         }
     }
+
     return thresholdedImage;
 }
 
