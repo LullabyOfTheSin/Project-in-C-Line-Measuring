@@ -1,15 +1,14 @@
 # depslib dependency file v1.0
 1516715975 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/DisplaySelected.c
 
-1516715990 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/ImageRead.c
+1517357573 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/Lines.c
 
-1516778142 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/Interface.c
+1517377386 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/main.c
 	"Interface.h"
+	"MarchingSquares.h"
 
-1516716002 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/Lines.c
-
-1516776915 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/main.c
-	"Interface.h"
+1517326990 /home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/Interface.h
+	<gtk/gtk.h>
 
 1491432418 /usr/include/gtk-3.0/gtk/gtk.h
 	<gdk/gdk.h>
@@ -2745,8 +2744,60 @@
 
 1491432418 /usr/include/gtk-3.0/gtk/gtk-autocleanups.h
 
-1516716007 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/MarchingSquares.c
+1517363328 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/MarchingSquares.c
+	"MarchingSquares.h"
 
-1516776790 /home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/Interface.h
-	<gtk/gtk.h>
+1517354905 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/ImageRead.c
+	"ImageRead.h"
+
+1517356454 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/Interface.c
+	"Interface.h"
+
+1517324673 source:/home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/lodepng.c
+	"lodepng.h"
+	<limits.h>
+	<stdio.h>
+	<stdlib.h>
+
+1517324687 /home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/lodepng.h
+	<string.h>
+	<vector>
+	<string>
+	"lodepng.h"
+	<iostream>
+	"lodepng.h"
+
+1516774591 /home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/stb_image.h
+	"stb_image.h"
+	<stdio.h>
+	<stdarg.h>
+	<stddef.h>
+	<stdlib.h>
+	<string.h>
+	<limits.h>
+	<math.h>
+	<stdio.h>
+	<assert.h>
+	<stdint.h>
+	<emmintrin.h>
+	<intrin.h>
+	<arm_neon.h>
+
+1517325739 /home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/Interface.c
+	"Interface.h"
+
+1517354905 /home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/ImageRead.h
+	<stdio.h>
+	<stdlib.h>
+	"lodepng.h"
+	"stb_image.h"
+
+1517345189 /home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/ImageRead.c
+	"ImageRead.h"
+
+1517361838 /home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/MarchingSquares.h
+	"Lines.h"
+	"ImageRead.h"
+
+1517359932 /home/sinneroflullaby/projektc/Project-in-C-Line-Measuring/Line-Measuring/Lines.h
 
